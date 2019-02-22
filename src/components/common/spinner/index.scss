@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import "src/style/store.scss";
+
+.vux-spinner {
+    stroke: #444;
+    fill: #444;
+    vertical-align: middle;
+    display: inline-block;
+    width: rem(56);
+    height: rem(56);
+}
+
+.vux-spinner svg {
+    width: rem(56);
+    height: rem(56);
+}
+
+.vux-spinner.vux-spinner-inverse {
+    stroke: #fff;
+    fill: #fff;
+}
+
+.vux-spinner-android {
+    stroke: #4b8bf4;
+}
+
+.vux-spinner-ios,
+.vux-spinner-ios-small {
+    stroke: #69717d;
+}
+
+.vux-spinner-spiral .stop1 {
+    stop-color: #fff;
+    stop-opacity: 0;
+}
+
+.vux-spinner-spiral.vux-spinner-inverse .stop1 {
+    stop-color: #000;
+}
+
+.vux-spinner-spiral.vux-spinner-inverse .stop2 {
+    stop-color: #fff;
+}
