@@ -1,56 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react
+React项目练习案例
 
-## Available Scripts
+# 项目初始化
+请完全按照以下步骤启动项目，请完全按照以下步骤启动项目，请完全按照以下步骤启动项目，重要的事情说三遍
+```bash
+git clone https://github.com/zhouwei1994/reactTemplate
 
-In the project directory, you can run:
+cd reactTemplate
 
-### `npm start`
+npm install
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+npm start
+```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+# 项目打包
+```bash
+npm run build
+```
 
-### `npm test`
+# 项目结构
+```bash
+├── config                      // webpack配置
+├── node_modules                // 项目依赖包
+├── public                      // 项目HTML文件
+├── scripts                     // 项目运行、打包等配置文件
+├── src                         // Ract Native
+│   ├── components              // 所有组件
+│   │    ├── common             // 常用组件
+│   │    ├── header             // 项目头部组件
+│   │    ├── module             // 项目组件
+│   │    └── navigation         // 项目底部导航组件
+│   ├── config                  // 项目配置文件
+│   │    ├── axios.js           // axios配置
+│   │    ├── env.js             // 开发环境/生产环境相关信息变更配置
+│   │    ├── rem.js             // rem布局配置
+│   │    └── utils.js           // 常用方法库
+│   ├── images                  // 项目图片
+│   │    └── tabIcon            // 底部导航图标
+│   ├── router                  // 路由部分
+│   │    └── index.js           // 具体页面导航配置
+│   ├── stores                  // redux部分
+│   │    └── index.js           // redux配置页面
+│   ├── style                   // 公共样式
+│   │    ├── common.js          // 样式初始化/公共样式
+│   │    └── store.js           // scss的minin方法/颜色配置
+│   ├── view                    // page模块聚合页
+│   └── main.js                 // react配置主文件
+├── package.json                // 项目配置信息
+├── start.bat                   // 启动项目指令文件，点击即可打开cmd运行npm start
+└── README.md                   // help
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-
-React 
-React-router 
-redux 
-redux-thunk 
-antd 
-axios
-
-amaze UI  响应式网站首选
-react-UI  
-Material-Ui
+```
